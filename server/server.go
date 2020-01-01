@@ -35,7 +35,7 @@ func main() {
 		// Force it server side
 		PreferServerCipherSuites: true,
 		// TLS 1.2 because we can
-		MinVersion: tls.VersionTLS12,
+		MinVersion: tls.VersionTLS13,
 	}
 
 	tlsConfig.BuildNameToCertificate()
